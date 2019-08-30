@@ -4,8 +4,15 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "webpack ./src/index.js --output ./build/index.bundle.js"
   },
   "author": "grabola",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "react": "^16.9.0",
+    "react-dom": "^16.9.0",
+    "webpack": "^4.39.3",
+    "webpack-cli": "^3.3.7"
+  }
 }
