@@ -5,13 +5,21 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "webpack ./src/index.js --output ./build/index.bundle.js"
+    "start": "webpack ./src/index.js --output ./build/app.bundle.js",
+    "watch": "browser-sync start --server --files css/*.css *.html *.js"
   },
   "author": "grabola",
   "license": "ISC",
   "devDependencies": {
+    "@babel/core": "^7.5.5",
+    "@babel/preset-env": "^7.5.5",
+    "@babel/preset-react": "^7.0.0",
+    "babel-loader": "^8.0.6",
+    "babel-preset-env": "^1.7.0",
+    "css-loader": "^3.2.0",
     "react": "^16.9.0",
     "react-dom": "^16.9.0",
+    "style-loader": "^1.0.0",
     "webpack": "^4.39.3",
     "webpack-cli": "^3.3.7"
   },
