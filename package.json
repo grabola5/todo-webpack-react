@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "webpack ./src/index.js --output ./build/app.bundle.js",
+    "start": "webpack --mode development",
+    "build": "webpack --mode production",
     "watch": "browser-sync start --server --files css/*.css *.html *.js"
   },
   "author": "grabola",
