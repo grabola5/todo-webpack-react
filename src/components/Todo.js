@@ -1,2 +1,5 @@
 import React from 'react';
-import App from '../containers/App.js'
+
+const Todo = props => <div>{props.text}</div>
+
+export default Todo;
