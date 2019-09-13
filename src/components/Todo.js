@@ -1,2 +1,6 @@
 import React from 'react';
-import App from '../containers/App.js'
+import style from './TodoList.css';
+
+const Todo = props => <div className={style.Task}>{props.text}</div>
+
+export default Todo;
