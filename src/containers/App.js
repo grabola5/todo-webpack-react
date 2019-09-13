@@ -4,6 +4,7 @@ import style from './App.css';
 import Title from '../components/Title.js';
 import Todo from '../components/Todo.js';
 import TodoList from '../components/TodoList.js';
+import { hot } from 'react-hot-loader';
 
 
 class App extends React.Component {
@@ -56,4 +57,4 @@ class App extends React.Component {
 	}
 }
 
-export default App;
+export default hot(module) (App);
