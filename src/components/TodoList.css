@@ -1,0 +1,38 @@
+.List {
+  background-color: #874E4C;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  width: 80vw;
+  max-height: 75vh;
+  box-shadow: 2px 2px 2px white;
+}
+
+.Task {
+  background-color: #E2B091;
+  color: #472426;
+  border: 1px solid #874E4C;
+  border-radius: 20%;
+  box-shadow: 2px 2px 1px #874E4C;
+  padding: 15px;
+  margin-top: 20px;
+  min-height: 40px;
+  width: 200px;
+  font-size: 24px;
+  text-align: center;
+}
+
+.Title {
+  color: #874e4c;
+  text-align: center;
+  text-transform: uppercase;
+  text-shadow: 2px 2px 2px white;
+  margin-bottom: 15px;
+}
+
+.TaskNumber {
+  text-align: center;
+  margin-bottom: 30px;
+}

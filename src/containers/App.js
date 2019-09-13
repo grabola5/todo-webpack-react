@@ -19,6 +19,15 @@ class App extends React.Component {
 				}, {
 				id: 3,
     		text: 'feed my cat'
+			}, {
+				id: 4,
+				text: 'go shopping'
+			}, {
+				id: 5,
+				text: 'do excercises'
+			}, {
+				id: 6,
+				text: 'wash the car'
 			}]
 		};
 	}
@@ -40,7 +49,7 @@ class App extends React.Component {
 	render() {
 		return (
 			<div className={style.TodoApp}>
-				<Title title="Todo App" length={this.state.data.length}/>
+				<Title title="Todo List" length={this.state.data.length}/>
 				<TodoList data={this.state.data} remove = {id => this.removeTodo(id)}/>
 			</div>
 		);
