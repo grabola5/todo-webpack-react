@@ -50,7 +50,7 @@ class App extends React.Component {
 		return (
 			<div className={style.TodoApp}>
 				<Title title="Todo List" length={this.state.data.length}/>
-				<TodoList data={this.state.data} remove = {id => this.removeTodo(id)}/>
+				<TodoList data={this.state.data} remove={id => this.removeTodo(id)}/>
 			</div>
 		);
 	}

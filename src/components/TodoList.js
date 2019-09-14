@@ -5,7 +5,7 @@ import Todo from './Todo.js'
 const TodoList = props => (
   <div className={style.List}>
    {props.data.map(todo => (
-     <Todo key={todo.id} text={todo.text} id={todo.id} />))}
+     <Todo key={todo.id} text={todo.text} id={todo.id} remove={props.remove}/>))}
   </div>)
 
 export default TodoList;

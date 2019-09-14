@@ -36,3 +36,9 @@
   text-align: center;
   margin-bottom: 30px;
 }
+
+.removeBtn {
+  background-color: #874E4C;
+  color: white;
+  float: right;
+}
