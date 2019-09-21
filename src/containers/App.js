@@ -3,6 +3,7 @@ import uuid from 'uuid';
 import style from './App.css';
 import Title from '../components/Title.js';
 import TodoList from '../components/TodoList.js';
+import TodoForm from '../components/TodoForm.js'
 import { hot } from 'react-hot-loader';
 
 
@@ -50,6 +51,7 @@ class App extends React.Component {
 		return (
 			<div className={style.TodoApp}>
 				<Title title="Todo List" length={this.state.data.length}/>
+				<TodoForm addTodo={(text) => this.addTodo(text)}/>
 				<TodoList data={this.state.data} remove={id => this.removeTodo(id)}/>
 			</div>
 		);
