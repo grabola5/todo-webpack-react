@@ -16,10 +16,12 @@ class TodoForm extends React.Component {
 
     handleClick(e) {
       e.preventDefault();
-      this.props.addTodo(this.state.value);
-      this.setState({
-        value: ''
-      });
+      if (this.state.value !== '') {
+        this.props.addTodo(this.state.value);
+        this.setState({
+          value: ''
+        });
+      }
     }
 
     render() {
